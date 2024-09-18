@@ -1,0 +1,39 @@
+<div class="inputClass">
+
+    <form class="example-form">
+        <h1>Angular_Material 'Input' Component</h1>
+        <mat-form-field class="example-full-width">
+            <mat-label>Favorite food</mat-label>
+            <input matInput placeholder="Ex. Pizza" value="Sushi">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Leave a comment</mat-label>
+            <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+        </mat-form-field>
+        <h1>Angular_Material 'select' Component</h1>
+        <mat-form-field class="example-full-width">
+            <mat-label>Favorite food</mat-label>
+            <mat-select name="food" matNativeControl>
+                <mat-option value="" selected></mat-option>
+                <mat-option value="">Apple</mat-option>
+                <mat-option value="">Orange</mat-option>
+                <mat-option value="">Lemon</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>Favorite car</mat-label>
+            <select matNativeControl name="car">
+                <option value="" selected></option>
+                <option value="">Maruti</option>
+                <option value="">Hyundai</option>
+
+            </select>
+        </mat-form-field>
+        <h1>Angular_Material 'AutoComplete' Component</h1>
+        <mat-autocomplete #auto="matAutocomplete">
+            
+              <mat-option value=""> Complete</mat-option>
+                      </mat-autocomplete>
+    </form>
+</div>
