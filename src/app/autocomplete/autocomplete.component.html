@@ -1,1 +1,13 @@
-<p>autocomplete works!</p>
+<div class="inputClass">
+    <form class="example-form">
+        <h1>Angular_Material 'AutoComplete' Component</h1>
+        <mat-form-field class="example-full-width">
+            <mat-label>Color list</mat-label>
+            <input matInput placeholder="Select your color" [matAutocomplete]="auto" [formControl]="formcontrol"/>
+            <mat-autocomplete autoActiveFirstOption #auto>
+                <mat-option *ngFor="let items of filteroptions | async" [value]="items">{{items}}</mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+
+    </form>
+</div>

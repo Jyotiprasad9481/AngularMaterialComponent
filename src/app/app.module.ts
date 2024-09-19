@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InputComponent } from './input/input.component';
 import { AutocompleteComponent } from './autocomplete/autocomplete.component';
 import { materialModule } from 'src/material.module';
+import { ReactiveFormsModule} from '@angular/forms'
 
 
 @NgModule({
@@ -18,7 +19,9 @@ import { materialModule } from 'src/material.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    materialModule
+    materialModule,
+    ReactiveFormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
